@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for shared/domain/value-objects/uuid.vo.ts</title>
+    <title>Code coverage report for shared/domain/repository/search-result.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">shared/domain/value-objects</a> uuid.vo.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">shared/domain/repository</a> search-result.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>28/28</span>
+                <span class='fraction'>36/36</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>28/28</span>
+                <span class='fraction'>36/36</span>
             </div>
         
             
@@ -90,59 +90,83 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">44x</span>
-<span class="cline-any cline-yes">44x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { ValueObject } from "../value-object";
-import { v4 as uuidv4, validate as uuidValidate } from 'uuid';
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">22x</span></td><td class="text"><pre class="prettyprint lang-js">import { Entity } from '../entity';
+import { ValueObject } from '../value-object';
 &nbsp;
+type SearchResultConstructorProps&lt;E extends Entity&gt; = {
+  items: E[];
+  total: number;
+  current_page: number;
+  per_page: number;
+};
 &nbsp;
-export class Uuid extends ValueObject {
-  readonly id: string;
+export class SearchResult&lt;E extends Entity = Entity&gt; extends ValueObject {
+  readonly items: E[];
+  readonly total: number;
+  readonly current_page: number;
+  readonly per_page: number;
+  readonly last_page: number;
 &nbsp;
-  constructor(id?: string) {
+  constructor(props: SearchResultConstructorProps&lt;E&gt;) {
     super();
-    this.id = id || uuidv4();
-    this.validate();
+    this.items = props.items;
+    this.total = props.total;
+    this.current_page = props.current_page;
+    this.per_page = props.per_page;
+    this.last_page = Math.ceil(this.total / this.per_page);
   }
 &nbsp;
-  private validate() {
-    const isValid = uuidValidate(this.id);
-&nbsp;
-    if (!isValid) {
-      throw new InvalidUuidError();
-    }
-  }
-}
-&nbsp;
-export class InvalidUuidError extends Error {
-  constructor(message?: string) {
-    super(message || 'Invalid uuid');
-    this.name = 'InvalidUuidError';
+  toJSON(forceEntity = false) {
+    return {
+      items: forceEntity ? this.items.map((item) =&gt; item.toJSON()) : this.items,
+      total: this.total,
+      current_page: this.current_page,
+      per_page: this.per_page,
+      last_page: this.last_page,
+    };
   }
 }</pre></td></tr></table></pre>
 
